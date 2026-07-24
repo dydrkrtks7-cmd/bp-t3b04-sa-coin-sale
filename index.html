@@ -1,199 +1,508 @@
-
 <!DOCTYPE html>
 <html lang="ko">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>인문 철학 지식 저널 및 아카이브</title>
-  <link rel="preconnect" href="https://fonts.googleapis.com">
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Space+Grotesk:wght@400;700&family=Noto+Sans+KR:wght@400;900&display=swap" rel="stylesheet">
-  <style>
-    * { margin: 0; padding: 0; box-sizing: border-box; }
-    body {
-      background-color: #0d0d0f;
-      color: #ebebeb;
-      font-family: 'Space Grotesk', 'Noto Sans KR', sans-serif;
-      line-height: 1.6;
-      padding: 32px;
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>아현 가라오케 가격 정보 — 합리적 선택을 위한 조건별 비교</title>
+    <meta name="description" content="아현 지역 가라오케 가격 정보를 분석하여 이용 조건별 적합성을 안내합니다. 시간대별 요금과 최적 선택 기준을 제공합니다.">
+    <meta name="keywords" content="아현 가라오케, 가라오케 가격, 아현 가라오케 가격, 가라오케 이용 안내, 아현 유흥 정보">
+    <link rel="canonical" href="https://ahyeon-karaoke-bar-note.best-samseong-hotplace.xyz/">
+    <meta property="og:title" content="아현 가라오케 가격 정보 — 합리적 선택을 위한 조건별 비교">
+    <meta property="og:description" content="아현 지역 가라오케 가격 정보를 분석하여 이용 조건별 적합성을 안내합니다.">
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://ahyeon-karaoke-bar-note.best-samseong-hotplace.xyz/">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:title" content="아현 가라오케 가격 정보 — 합리적 선택을 위한 조건별 비교">
+    <meta name="twitter:description" content="아현 지역 가라오케 가격 정보를 분석하여 이용 조건별 적합성을 안내합니다.">
+    <meta name="bpaas-design-system" content="brutalist-avantgarde">
+    <meta name="bpaas-design-theme" content="kr-neon-void">
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "FAQPage",
+        "mainEntity": [
+            {
+                "@type": "Question",
+                "name": "아현 가라오케의 기본 가격대는 어느 정도인가요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "아현 가라오케는 주로 시간당 요금으로 운영되며, 오후 시간대에는 보통 1~2만 원대로 시작합니다. 심야 시간대에는 요금이 다소 상승할 수 있어 사전 확인이 필요합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "가라오케 이용 시 추가 비용이 발생하나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "추가 비용은 음료나 주문 메뉴에 따라 달라집니다. 일부 업소는 기본 세팅비를 부과할 수 있으니, 예약 시 전체 요금 구조를 꼼꼼히 살펴보는 것이 좋습니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "예약 없이 바로 방문해도 되나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "대부분의 아현 가라오케는 예약 없이 방문 가능하지만, 주말이나 성수기에는 빈 방을 잡기 어려울 수 있습니다. 가격 혜택을 받으려면 사전 예약을 추천합니다."
+                }
+            },
+            {
+                "@type": "Question",
+                "name": "어떤 조건에서 가장 저렴하게 이용할 수 있나요?",
+                "acceptedAnswer": {
+                    "@type": "Answer",
+                    "text": "평일 오후 시간대나 이른 저녁에 방문하면 상대적으로 저렴한 요금으로 이용할 수 있습니다. 단체 이용 시 할인 혜택이 있을 수 있으니 문의해보세요."
+                }
+            }
+        ]
     }
-    .wrapper {
-      max-width: 1000px;
-      margin: 0 auto;
+    </script>
+    <script type="application/ld+json">
+    {
+        "@context": "https://schema.org",
+        "@type": "Person",
+        "name": "강지훈",
+        "url": "https://ahyeon-karaoke-bar-note.best-samseong-hotplace.xyz/author/",
+        "description": "서울 지역 유흥 정보를 7년간 정리해온 로컬 가이드"
     }
-    header {
-      display: flex;
-      justify-content: space-between;
-      align-items: center;
-      margin-bottom: 60px;
-    }
-    .brand {
-      font-size: 2rem;
-      font-weight: 900;
-      color: #ffffff;
-      text-decoration: none;
-      letter-spacing: -0.05em;
-    }
-    nav { display: flex; gap: 24px; }
-    nav a {
-      color: #888888;
-      text-decoration: none;
-      font-size: 0.9rem;
-      font-weight: 700;
-      text-transform: uppercase;
-    }
-    nav a:hover { color: #f43f5e; }
-    main { margin-bottom: 80px; }
-    .label {
-      font-size: 0.75rem;
-      font-family: monospace;
-      color: #f43f5e;
-      font-weight: bold;
-      letter-spacing: 0.2em;
-      text-transform: uppercase;
-      margin-bottom: 24px;
-    }
-    h1 {
-      font-size: 3rem;
-      font-weight: 900;
-      line-height: 1.15;
-      letter-spacing: -0.04em;
-      color: #ffffff;
-      margin-bottom: 40px;
-    }
-    .article-body {
-      font-size: 1.15rem;
-      color: #cccccc;
-      font-weight: 400;
-      max-width: 780px;
-    }
-    .article-body p { margin-bottom: 24px; }
-    .juice-link {
-      color: #ffffff;
-      text-decoration: none;
-      font-weight: 900;
-      box-shadow: inset 0 -6px 0 #f43f5e;
-      transition: all 0.15s ease-in-out;
-    }
-    .juice-link:hover {
-      box-shadow: inset 0 -24px 0 #f43f5e;
-      color: #ffffff;
-    }
-    .archive-section {
-      margin-top: 80px;
-    }
-    .section-title {
-      font-size: 1rem;
-      font-family: monospace;
-      color: #888888;
-      text-transform: uppercase;
-      letter-spacing: 0.1em;
-      margin-bottom: 32px;
-    }
-    .archive-list {
-      display: flex;
-      flex-direction: column;
-      gap: 20px;
-    }
-    .archive-card {
-      text-decoration: none;
-      color: #ffffff;
-      display: block;
-      border: 1px solid #1e293b;
-      padding: 32px;
-      transition: all 0.2s ease;
-    }
-    .archive-card:hover {
-      border-color: #f43f5e;
-      background-color: #0f172a;
-    }
-    .archive-card h3 {
-      font-size: 1.4rem;
-      font-weight: 900;
-      margin-bottom: 12px;
-      letter-spacing: -0.02em;
-    }
-    .archive-card p {
-      color: #888888;
-      font-size: 0.95rem;
-    }
-    footer {
-      border-top: 1px solid #1e293b;
-      padding-top: 32px;
-      display: flex;
-      justify-content: space-between;
-      font-size: 0.8rem;
-      font-family: monospace;
-      color: #475569;
-    }
-    footer a { color: #475569; text-decoration: none; }
-    footer a:hover { color: #f43f5e; }
-    @media(max-width: 768px) {
-      header { flex-direction: column; gap: 20px; align-items: flex-start; }
-      h1 { font-size: 2.2rem; }
-      .archive-card { padding: 20px; }
-      .archive-card h3 { font-size: 1.2rem; }
-    }
-  </style>
+    </script>
+    <style>
+        /* CSS Reset and Base */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        :root {
+            --primary: #000000;
+            --secondary: #ffffff;
+            --accent: #ff3b00;
+            --font-main: Impact, system-ui, sans-serif;
+        }
+
+        body {
+            font-family: system-ui, -apple-system, sans-serif;
+            background-color: var(--secondary);
+            color: var(--primary);
+            line-height: 1.6;
+            overflow-x: hidden;
+        }
+
+        /* Utility Classes */
+        .x-card-i5cy {
+            max-width: none;
+            width: 100%;
+        }
+
+        .t-nav-kmeb {
+            padding: 72px 48px;
+            gap: 48px;
+        }
+
+        /* Typography */
+        h1, h2, h3 {
+            font-family: var(--font-main);
+            text-transform: uppercase;
+            letter-spacing: -0.02em;
+        }
+
+        h1 {
+            font-size: clamp(3rem, 8vw, 6rem);
+            line-height: 0.9;
+            margin-bottom: 24px;
+        }
+
+        h2 {
+            font-size: clamp(1.8rem, 4vw, 2.5rem);
+            border-bottom: 4px solid var(--accent);
+            display: inline-block;
+            margin-bottom: 32px;
+        }
+
+        /* Header & Navigation */
+        .n-box-gyac {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 24px 48px;
+            position: sticky;
+            top: 0;
+            z-index: 100;
+            border-bottom: 4px solid var(--accent);
+        }
+
+        .n-side-2y9g {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            flex-wrap: wrap;
+        }
+
+        .q-txt-xwyn {
+            font-size: 1.5rem;
+            font-weight: bold;
+            text-decoration: none;
+            color: var(--secondary);
+        }
+
+        .v-hero-3t98 {
+            display: flex;
+            gap: 24px;
+        }
+
+        .v-hero-3t98 a {
+            color: var(--secondary);
+            text-decoration: none;
+            font-weight: bold;
+            transition: color 0.2s;
+        }
+
+        .v-hero-3t98 a:hover {
+            color: var(--accent);
+        }
+
+        /* Hamburger Menu for Mobile */
+        .k-list-gp2o {
+            display: none;
+            flex-direction: column;
+            gap: 4px;
+            cursor: pointer;
+        }
+
+        .k-list-gp2o span {
+            width: 24px;
+            height: 3px;
+            background-color: var(--secondary);
+        }
+
+        @media (max-width: 768px) {
+            .k-list-gp2o {
+                display: flex;
+            }
+
+            .v-hero-3t98 {
+                display: none;
+                flex-direction: column;
+                width: 100%;
+                text-align: center;
+                gap: 16px;
+                margin-top: 16px;
+            }
+
+            .v-hero-3t98.active {
+                display: flex;
+            }
+
+            .t-nav-kmeb {
+                padding: 48px 24px;
+            }
+
+            h1 {
+                font-size: clamp(2.5rem, 10vw, 4rem);
+            }
+        }
+
+        /* Hero Section - Brutalist & Scandinavian Mix */
+        .t-hero-v5y9 {
+            background-color: var(--secondary);
+            padding: 72px 48px;
+            margin-bottom: 120px;
+            position: relative;
+            border-left: 8px solid var(--accent);
+        }
+
+        .t-hero-v5y9::after {
+            content: "";
+            position: absolute;
+            top: -20px;
+            right: 48px;
+            width: 100px;
+            height: 100px;
+            background-color: var(--accent);
+            transform: rotate(15deg);
+            z-index: -1;
+        }
+
+        .t-hero-v5y9 h1 {
+            color: var(--primary);
+            max-width: 800px;
+            margin-left: -8px;
+        }
+
+        .t-hero-v5y9 p {
+            font-size: 1.25rem;
+            max-width: 600px;
+            color: #333;
+        }
+
+        /* Content Sections - Varied Structures */
+        .m-main-dmj1 {
+            background-color: #f9f9f9;
+            border-top: 4px solid var(--primary);
+            border-bottom: 4px solid var(--primary);
+        }
+
+        .m-main-dmj1-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 48px;
+        }
+
+        .m-main-dmj1-item {
+            border: 3px solid var(--primary);
+            padding: 32px;
+            transform: skewY(-1deg);
+            transition: transform 0.3s;
+        }
+
+        .m-main-dmj1-item:hover {
+            transform: skewY(0deg);
+        }
+
+        .m-main-dmj1-item h3 {
+            color: var(--accent);
+            margin-bottom: 16px;
+        }
+
+        .q-wrap-v9kj {
+            list-style: none;
+            padding: 0;
+        }
+
+        .q-wrap-v9kj li {
+            margin-bottom: 12px;
+            padding-left: 24px;
+            position: relative;
+        }
+
+        .q-wrap-v9kj li::before {
+            content: "→";
+            position: absolute;
+            left: 0;
+            color: var(--accent);
+            font-weight: bold;
+        }
+
+        .x-hero-lv67 {
+            background-color: var(--secondary);
+        }
+
+        .x-hero-lv67-item {
+            border-bottom: 2px solid var(--primary);
+            padding: 32px 0;
+        }
+
+        .x-hero-lv67-item summary {
+            font-family: var(--font-main);
+            font-size: 1.25rem;
+            cursor: pointer;
+            color: var(--primary);
+            list-style: none;
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+
+        .x-hero-lv67-item summary::after {
+            content: "+";
+            font-size: 1.5rem;
+            color: var(--accent);
+        }
+
+        .x-hero-lv67-item[open] summary::after {
+            content: "-";
+        }
+
+        .x-hero-lv67-item p {
+            margin-top: 16px;
+            color: #555;
+            max-width: 800px;
+        }
+
+        /* Author Bio Section */
+        .m-hero-osi5 {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 48px;
+            display: flex;
+            gap: 32px;
+            align-items: center;
+            border-top: 4px solid var(--accent);
+        }
+
+        .m-hero-osi5-info h3 {
+            color: var(--accent);
+            font-size: 1.2rem;
+        }
+
+        .m-hero-osi5-info p {
+            margin-top: 8px;
+            font-size: 0.95rem;
+        }
+
+        /* Footer */
+        .t-wrap-33pv {
+            background-color: var(--primary);
+            color: var(--secondary);
+            padding: 48px;
+            text-align: center;
+            border-top: 4px solid var(--accent);
+        }
+
+        .t-wrap-33pv p {
+            font-size: 0.9rem;
+            opacity: 0.8;
+        }
+
+        /* Brutalist Decorative Elements */
+        .q-list-cy1h-line {
+            width: 100%;
+            height: 4px;
+            background-color: var(--accent);
+            margin: 24px 0;
+        }
+
+        .q-list-cy1h-block {
+            width: 50px;
+            height: 50px;
+            background-color: var(--accent);
+            transform: rotate(45deg);
+            margin: 0 auto;
+        }
+
+        /* Responsive Adjustments */
+        @media (max-width: 768px) {
+            .t-hero-v5y9 {
+                padding: 48px 24px;
+                margin-bottom: 80px;
+            }
+
+            .t-hero-v5y9::after {
+                width: 60px;
+                height: 60px;
+                right: 24px;
+            }
+
+            .m-main-dmj1-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .m-hero-osi5 {
+                flex-direction: column;
+                text-align: center;
+            }
+
+            .t-wrap-33pv {
+                padding: 32px 24px;
+            }
+        }
+    </style>
 </head>
 <body>
-  <div class="wrapper">
-    <header>
-      <a href="/" class="brand">STREET.KR</a>
-      <nav><a href="index.html">HOME</a> | <a href="sitemap.xml">SITEMAP</a></nav>
-    </header>
-    <main>
-      <div class="label">// BRUTALIST GRID SYSTEM</div>
-      <h1>인문 철학 지식 저널 및 아카이브</h1>
-      <div class="article-body">
-        환영합니다. 본 블로그 공간은 세련되고 품격 있는 <strong>인문 철학</strong> 분야의 깊이 있는 전문 에세이와 실용 기술 논문을 공유하는 매니아 전용 아카이브 저널입니다. 아래의 최근 기사 목록을 통해 새로운 지식의 지평을 넓혀 보시기 바랍니다.
-      </div>
-      
-      
-      <div class="archive-section">
-        <div class="section-title">// RECENT ARCHIVES</div>
-        <div class="archive-list">
-          
-        <a href="posts/normal-1.html" class="archive-card">
-          <h3>바뤼흐 스피노자의 에티카(Ethica) 속 동물의 코나투스(Conatus)와 비주류 정서론 분석</h3>
-          <p>네덜란드의 고독한 렌즈 가공 철학자 스피노자의 주저 에티카에서 피력된 코나투스(자신의 존재를 유지하려는 영속적 본성 노력) 개념을 동물에게 투영해 볼 때, 인간 중심적 관점에서 해...</p>
-        </a>
-      
-
-        <a href="posts/normal-2.html" class="archive-card">
-          <h3>질 들뢰즈의 리좀(Rhizome) 공간 역학으로 조망한 아날로그 골목길의 인문 구조학</h3>
-          <p>시작과 끝이 규정되지 않고 끊임없이 파편적으로 연결되며 영토를 가로지르는 들뢰즈의 리좀 모델을 격자형 대도시가 아닌 오랜 유기적 골목길의 공간 미학에 적용해 볼 때, 규칙적 구획이...</p>
-        </a>
-      
-
-        <a href="posts/normal-3.html" class="archive-card">
-          <h3>중세 스콜라 철학의 영적 통신 논쟁: 천사들의 비물질적 메시지 전달 속도와 주파수</h3>
-          <p>중세 대철학자 토마스 아퀴나스가 주창했던 천사들의 언어(Speech of Angels) 형이상학은 물리적 육체와 공간의 장벽이 없는 순수한 지성적 존재들이 어떻게 공간을 왜곡하고 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-1.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
-
-        <a href="posts/juice-2.html" class="archive-card">
-          <h3>지적 인문 철학 독자들을 위해 준비한 백링크 대행 사이트 통합 안내 리포트</h3>
-          <p>신과 만물의 필연적인 자기 보존 욕구와 중심을 인정하지 않는 무정형의 리좀적 골목길 사색을 거치며 시대의 심연을 정밀하게 성찰해 나가는 깊이 있는 지성인분들이라면, 거칠고 차가운 ...</p>
-        </a>
-      
+    <header class="n-box-gyac">
+        <div class="x-card-i5cy">
+            <nav class="n-side-2y9g">
+                <a href="/" class="q-txt-xwyn">아현 가라오케 가격 정보</a>
+                <div class="k-list-gp2o" onclick="toggleMenu()">
+                    <span></span>
+                    <span></span>
+                    <span></span>
+                </div>
+                <div class="v-hero-3t98" id="menu">
+                    <a href="#standards">선택 기준</a>
+                    <a href="#checklist">확인 사항</a>
+                    <a href="#faq">자주 묻는 질문</a>
+                    <a href="#about">소개</a>
+                </div>
+            </nav>
         </div>
-      </div>
+    </header>
+
+    <main>
+        <section class="t-hero-v5y9">
+            <div class="x-card-i5cy">
+                <h1>아현 가라오케 가격 정보<br>합리적 선택을 위한 조건별 비교</h1>
+                <p>여기서는 아현 지역 가라오케의 가격 구조를 꼼꼼히 분석하고, 여러분의 이용 조건에 맞는 최적의 선택 기준을 제시합니다. 단순한 가격 나열이 아닌, 실제 이용에 필요한 정보만 담았습니다.</p>
+                <div class="q-list-cy1h-block"></div>
+            </div>
+        </section>
+
+        <section id="standards" class="t-nav-kmeb m-main-dmj1">
+            <div class="x-card-i5cy">
+                <h2>선택 기준: 어떤 조건을 고려해야 하나요?</h2>
+                <p>가격만 보고 결정하면 나중에 후회할 수 있어요. 아래 기준을 참고해서 자신에게 딱 맞는 곳을 찾아보세요.</p>
+                <div class="m-main-dmj1-grid">
+                    <div class="m-main-dmj1-item">
+                        <h3>1. 시간대별 요금</h3>
+                        <p>오후, 저녁, 심야 시간에 따라 가격이 크게 달라집니다. 보통 이른 저녁이 가장 합리적이에요.</p>
+                    </div>
+                    <div class="m-main-dmj1-item">
+                        <h3>2. 인원 수 할인</h3>
+                        <p>혼자보다는 친구들과 함께 가면 인당 가격이 낮아질 수 있어요. 단체 할인 여부를 미리 확인하세요.</p>
+                    </div>
+                    <div class="m-main-dmj1-item">
+                        <h3>3. 부가 서비스</h3>
+                        <p>음료 포함 여부, 추가 과금 항목(예: 마이크 대여)이 있는지 꼭 점검해야 합니다.</p>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <section id="checklist" class="t-nav-kmeb">
+            <div class="x-card-i5cy">
+                <h2>이용 전 확인사항: 꼭 지켜야 할 것들</h2>
+                <ul class="q-wrap-v9kj">
+                    <li>예약 필수 여부: 주말에는 예약 없이 방문하기 어려울 수 있어요.</li>
+                    <li>취소 정책: 갑작스러운 취소 시 위약금이 발생할 수 있으니 사전에 확인하세요.</li>
+                    <li>시간 연장 가능: 노래가 잘 풀릴 때 시간을 더 추가할 수 있는지 알아두면 좋아요.</li>
+                    <li>결제 수단: 현금만 받는 곳도 있으니 카드 사용 가능 여부를 체크하세요.</li>
+                </ul>
+                <div class="q-list-cy1h-line"></div>
+                <p>이 체크리스트를 통해 불편한 상황을 미리 예방할 수 있습니다. 작은 준비가 큰 만족으로 이어져요.</p>
+            </div>
+        </section>
+
+        <section id="faq" class="t-nav-kmeb x-hero-lv67">
+            <div class="x-card-i5cy">
+                <h2>자주 묻는 질문</h2>
+                <details class="x-hero-lv67-item">
+                    <summary>아현 가라오케의 기본 가격대는 어느 정도인가요?</summary>
+                    <p>아현 가라오케는 주로 시간당 요금으로 운영되며, 오후 시간대에는 보통 1~2만 원대로 시작합니다. 심야 시간대에는 요금이 다소 상승할 수 있어 사전 확인이 필요합니다.</p>
+                </details>
+                <details class="x-hero-lv67-item">
+                    <summary>가라오케 이용 시 추가 비용이 발생하나요?</summary>
+                    <p>추가 비용은 음료나 주문 메뉴에 따라 달라집니다. 일부 업소는 기본 세팅비를 부과할 수 있으니, 예약 시 전체 요금 구조를 꼼꼼히 살펴보는 것이 좋습니다.</p>
+                </details>
+                <details class="x-hero-lv67-item">
+                    <summary>예약 없이 바로 방문해도 되나요?</summary>
+                    <p>대부분의 아현 가라오케는 예약 없이 방문 가능하지만, 주말이나 성수기에는 빈 방을 잡기 어려울 수 있습니다. 가격 혜택을 받으려면 사전 예약을 추천합니다.</p>
+                </details>
+                <details class="x-hero-lv67-item">
+                    <summary>어떤 조건에서 가장 저렴하게 이용할 수 있나요?</summary>
+                    <p>평일 오후 시간대나 이른 저녁에 방문하면 상대적으로 저렴한 요금으로 이용할 수 있습니다. 단체 이용 시 할인 혜택이 있을 수 있으니 문의해보세요.</p>
+                </details>
+            </div>
+        </section>
     </main>
-    <footer>
-      <div>&copy; 2026 STREET.KR. ALL RIGHTS RESERVED.</div>
-      <div>
-        <a href="sitemap.xml">SITEMAP</a> | 
-        <a href="#">PRIVACY</a> | 
-        <a href="#">DISCLAIMER</a>
-      </div>
+
+    <section class="m-hero-osi5">
+        <div class="m-hero-osi5-info">
+            <h3>글쓴이: 강지훈</h3>
+            <p>서울 지역 유흥 정보를 7년간 정리해온 로컬 가이드입니다. 여러분이 합리적인 선택을 할 수 있도록 돕겠습니다.</p>
+        </div>
+    </section>
+
+    <footer class="t-wrap-33pv">
+        <div class="x-card-i5cy">
+            <p>&copy; 2023 아현 가라오케 가격 정보. 모든 권리 보유.</p>
+            <p>이 웹사이트는 정보 제공 목적이며, 실제 가격은 업소에 따라 다를 수 있습니다.</p>
+        </div>
     </footer>
-  </div>
+
+    <script>
+        function toggleMenu() {
+            const menu = document.getElementById('menu');
+            menu.classList.toggle('active');
+        }
+    </script>
 </body>
 </html>
